@@ -1,20 +1,12 @@
 {
-  "name": "chat-nestor",
+  "name": "chat-backend",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/Nestor-xd/chat-nestor#readme",
-  "bugs": {
-    "url": "https://github.com/Nestor-xd/chat-nestor/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nestor-xd/chat-nestor.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "description": "Servidor WebSocket en tiempo real para el chat",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
   }
 }

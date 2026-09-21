@@ -1,6 +1,5 @@
 node_modules
 npm-debug.log
-backend/node_modules
 .git
 .gitignore
 .env

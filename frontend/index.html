@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat en Tiempo Real</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-app">
+    <!-- Encabezado de la aplicación -->
+    <header class="chat-header">
+      <div class="header-info">
+        <h2>Chat en Tiempo Real</h2>
+        <div class="status-indicator">
+          <span id="status-dot" class="status-dot offline"></span>
+          <span id="status-text">Desconectado</span>
+        </div>
+      </div>
+      <div class="user-bar">
+        <label for="username-input">Usuario:</label>
+        <input type="text" id="username-input" placeholder="Ingresa tu nombre..." maxlength="20">
+        <button id="set-username-btn" type="button">Guardar</button>
+      </div>
+    </header>
+
+    <!-- Área de mensajes -->
+    <main class="chat-messages" id="messages-container" aria-live="polite">
+      <!-- Los mensajes se insertarán dinámicamente aquí -->
+    </main>
+
+    <!-- Barra de envío de mensaje -->
+    <form class="chat-input-form" id="chat-form">
+      <input 
+        type="text" 
+        id="message-input" 
+        placeholder="Escribe un mensaje..." 
+        autocomplete="off" 
+        required 
+        disabled
+      >
+      <button type="submit" id="send-btn" disabled>Enviar</button>
+    </form>
+  </div>
+
+  <!-- Scripts de configuración y lógica -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
